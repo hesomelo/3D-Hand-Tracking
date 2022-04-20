@@ -21,7 +21,7 @@ def LOSS_3D(pred, gt):
   return _mse(kin_tree, gt)
 
 # TODO: Implement.
-def LOSS_REG(alpha,beta, L, U):
+def LOSS_REG(alpha, beta, L, U):
   # U and L are upper and lower limits for the alpha params (which are the things that get mapped into theta MANO params).
   loss = np.linalg.norm(beta)**2
   for i in range(3,48):
